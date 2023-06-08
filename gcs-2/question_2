@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This is a script that generates two random numbers, and print each of these numbers and their square roots.
+num1=$((RANDOM % 100 + 1))
+num2=$((RANDOM % 100 + 1))
+sqrt1=$(echo "scale=2; sqrt($num1)" | bc)
+sqrt2=$(echo "scale=2; sqrt($num2)" | bc)
+sum=$(echo "scale=2; $sqrt1 + $sqrt2" | bc)
+echo "The first random number generated is $num1"
+echo "The square root $sqrt1"
+echo "The second random number generated is $num2"
+echo "The square root is $sqrt2"
+echo "The sum of their square roots is $sum"
