@@ -1,0 +1,12 @@
+#!/usr/bin/env bash 
+# This is a script that ask the user for two numbers and outputs their products.
+
+read -p "Enter the first number: " num1
+
+
+read -p "Enter the second number: " num2
+
+product=$((num1 * num2))
+
+
+echo "The product of $num1 and $num2 is $product."
