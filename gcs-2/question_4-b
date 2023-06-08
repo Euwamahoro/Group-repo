@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Reads and creates folders from text file line by line
+while IFS= read -r foldername
+do 
+	mkdir "$foldername"
+done < folder.txt	
