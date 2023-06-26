@@ -6,3 +6,4 @@ password="899c79fc532cd0591af1"
 directory="Group-repo"
 backup_location="/home/sftp-student/03033/summative"
 sshpass -p $password scp -r $directory $user@$host:$backup_location
+
