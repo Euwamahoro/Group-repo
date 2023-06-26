@@ -12,8 +12,10 @@ if [ -d "/Group-repo/Summative-question_1/" ]; then
     fi
 
     for FILE in $LIST; do
-        if [ -e "/Group-repo/Summative-question_1/$FILE" ]; then
-            cp -r "/Group-repo/Summative-question_1/$FILE" "negpod_id-q1"
-        fi
+	if [ "$FILE" != "negpod_id-q1" ]; then
+	       	if [ -e "/Group-repo/Summative-question_1/$FILE" ]; then
+			cp -r "/Group-repo/Summative-question_1/$FILE" "negpod_id-q1"
+                fi
+	fi
 done
 fi
